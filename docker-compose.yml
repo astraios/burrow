@@ -1,0 +1,11 @@
+version: "2"
+services:
+  burrow:
+    image: hooli/burrow
+    ports:
+      - 8000:8000
+    environment:
+      - ZK_HOSTS=zookeeper1.dev.private.mesao.com:2181 zookeeper2.dev.private.mesao.com:2181 zookeeper3.dev.private.mesao.com:2181
+      - KAFKA_HOSTS=kafka1.dev.private.mesao.com:9092 kafka2.dev.private.mesao.com:9092 kafka3.dev.private.mesao.com:9092
+
+

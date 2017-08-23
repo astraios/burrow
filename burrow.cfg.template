@@ -1,0 +1,19 @@
+[general]
+client-id=burrow-lagchecker
+pidfile=burrow.pid
+logdir=/var/log/burrow
+
+[httpserver]
+server=on
+port=8000
+
+[kafka "example"]
+broker=kafka1.example
+broker=kafka2.example
+broker=kafka2.example
+broker-port=9092
+zookeeper=zk1.example
+zookeeper=zk1.example
+zookeeper=zk1.example
+zookeeper-port=2181
+zookeeper-path=/kafka-cluster
